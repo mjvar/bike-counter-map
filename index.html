@@ -14,8 +14,13 @@
 <body>
 
   <header>
-    <h1>Toronto Permanent Bike Counters</h1>
-    <p></p>
+    <div class="header-row">
+      <div>
+        <h1>Toronto Permanent Bike Counters</h1>
+        <p></p>
+      </div>
+      <button id="header-info-btn" title="About this data">i</button>
+    </div>
   </header>
 
   <div id="main">
@@ -26,7 +31,29 @@
     <div id="map"></div>
   </div>
 
+  <div id="data-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button id="modal-close" class="modal-close">&times;</button>
+      <h2 class="modal-title">About this map</h2>
+      <div class="modal-body">
+        <p>This map uses data from <a href="https://open.toronto.ca/" target="_blank" rel="noopener noreferrer">Toronto Open Data</a>.</p>
+        <ul>
+          <li><a href="https://open.toronto.ca/dataset/permanent-bicycle-counters/" target="_blank" rel="noopener noreferrer">Permanent Bike Counters dataset</a></li>
+          <li><a href="https://open.toronto.ca/dataset/cycling-network/" target="_blank" rel="noopener noreferrer">Cycling Network dataset</a></li>
+          <li><a href="https://open.toronto.ca/dataset/city-wards/" target="_blank" rel="noopener noreferrer">City Wards dataset</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <script src="map.js"></script>
+  <script>
+    const modal      = document.getElementById("data-modal");
+    const modalClose = document.getElementById("modal-close");
+    document.getElementById("header-info-btn").addEventListener("click", () => modal.classList.add("open"));
+    modalClose.addEventListener("click", () => modal.classList.remove("open"));
+    modal.addEventListener("click", e => { if (e.target === modal) modal.classList.remove("open"); });
+  </script>
 
 </body>
 </html>
