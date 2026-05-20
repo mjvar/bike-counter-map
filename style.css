@@ -1,0 +1,253 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 12px 20px;
+  background: #1a1a2e;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+header h1 { font-size: 1.1rem; font-weight: 600; }
+header p  { font-size: 0.8rem; opacity: 0.6; margin-top: 2px; }
+
+#main {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* --- Side panel --- */
+#panel {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 25%;
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  z-index: 1000;
+  transform: translateX(calc(-100% - 12px));
+  transition: transform 0.25s ease;
+}
+
+#panel.open {
+  transform: translateX(0);
+}
+
+#panel-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  margin: 8px 10px 0 0;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #555;
+  line-height: 1;
+  z-index: 1;
+}
+
+#panel-close:hover { color: #000; }
+
+#panel-content {
+  padding: 4px 16px 16px;
+  clear: both;
+}
+
+.panel-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  line-height: 1.3;
+  color: #1a1a2e;
+}
+
+.panel-section {
+  margin-bottom: 20px;
+}
+
+.panel-section-header {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.miss-badge {
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #e74c3c;
+}
+
+.dir-card {
+  margin-bottom: 10px;
+}
+
+.dir-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 3px;
+}
+
+.dir-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.dir-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.dir-label {
+  font-size: 0.62rem;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.dir-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.dir-date {
+  font-size: 0.65rem;
+  font-weight: 400;
+  opacity: 0.55;
+}
+
+/* --- Map --- */
+#map { width: 100%; height: 100%; }
+
+/* --- Tooltips --- */
+.tip-name {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+}
+
+.tip-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.tip-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-label {
+  font-size: 0.65rem;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.tip-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tip-peak-row {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.tip-date {
+  font-size: 0.65rem;
+  opacity: 0.7;
+  align-self: flex-end;
+  padding-bottom: 2px;
+}
+
+/* --- Counter markers --- */
+.counter-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  cursor: pointer;
+  transition: border-color 0.15s, border-width 0.15s;
+}
+
+.counter-marker.active {
+  border-color: #333;
+  border-width: 3px;
+}
+
+/* --- Info icon & tooltip --- */
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  color: #aaa;
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 600;
+  cursor: default;
+  flex-shrink: 0;
+  line-height: 1;
+  user-select: none;
+}
+
+.info-icon:hover { border-color: #888; color: #666; }
+
+.panel-info-tip {
+  position: fixed;
+  background: #222;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.45;
+  padding: 6px 9px;
+  border-radius: 6px;
+  max-width: 200px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+  z-index: 9999;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.panel-info-tip.visible { opacity: 1; }
+
+/* --- Ward labels --- */
+.ward-label {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2c5f9e;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+  width: 160px;
+  text-align: center;
+}

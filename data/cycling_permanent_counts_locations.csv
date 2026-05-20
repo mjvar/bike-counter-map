@@ -1,0 +1,44 @@
+_id,location_dir_id,location_name,direction,linear_name_full,side_street,longitude,latitude,centreline_id,bin_size,latest_calibration_study,first_active,last_active,date_decommissioned,technology
+1,1,"Bloor St E, west of Castle Frank Rd (retired)",Eastbound,Bloor St E,Castle Frank Rd,-79.3681194,43.6738047,8540609,00:15:00,,1994-06-26,2019-06-13,2019-06-13,Induction - Other
+2,2,"Bloor St E, west of Castle Frank Rd (retired)",Westbound,Bloor St E,Castle Frank Rd,-79.3681194,43.6738047,8540609,00:15:00,,1994-06-26,2019-06-13,2019-06-13,Induction - Other
+3,3,"Bloor St W, west of Oakmount Rd",Eastbound,Bloor St W,Oakmount Rd,-79.4625696,43.6541459,30042273,00:15:00,2025-07-23,2023-06-16,2026-04-14,,Induction - Eco-Counter
+4,4,"Bloor St W, west of Oakmount Rd",Westbound,Bloor St W,Oakmount Rd,-79.4625696,43.6541459,30042273,00:15:00,2025-07-23,2023-06-16,2026-04-14,,Induction - Eco-Counter
+5,5,"Bloor St W, west of Huron St",Eastbound,Bloor St W,Huron St,-79.4022396,43.6670654,1142672,00:15:00,2025-07-23,2022-10-27,2026-04-14,,Induction - Eco-Counter
+6,6,"Bloor St W, west of Huron St",Westbound,Bloor St W,Huron St,-79.4022396,43.6670654,1142672,00:15:00,2025-07-23,2022-10-27,2026-04-14,,Induction - Eco-Counter
+7,7,"Bloor St W, west of Huron St (retired)",Westbound,Bloor St W,Huron St,-79.4022206,43.6669895,1142672,00:15:00,,2018-02-09,2021-02-08,2022-06-02,Induction - Eco-Counter
+8,8,"Bloor St W, east of Palmerston Blvd",Eastbound,Bloor St W,Palmerston Blvd,-79.413093,43.6647258,8353520,00:15:00,2025-07-23,2023-03-31,2026-04-14,,Induction - Eco-Counter
+9,9,"Bloor St W, east of Palmerston Blvd",Westbound,Bloor St W,Palmerston Blvd,-79.413093,43.6647258,8353520,00:15:00,2025-07-23,2023-03-31,2026-04-14,,Induction - Eco-Counter
+10,10,"Bloor St W, east of Palmerston Blvd (retired)",Eastbound,Bloor St W,Palmerston Blvd,-79.413079,43.6647238,8353520,00:15:00,,2018-02-09,2020-02-11,2020-02-12,Induction - Eco-Counter
+11,11,"Bloor St W, east of Palmerston Blvd (retired)",Westbound,Bloor St W,Palmerston Blvd,-79.413079,43.6647238,8353520,00:15:00,,2018-02-09,2020-02-11,2020-02-12,Induction - Eco-Counter
+12,12,"Bloor St W, east of Old Mill Trl",Eastbound,Bloor St W,Old Mill Trail,-79.494202,43.6491724,30081325,00:15:00,2025-07-23,2024-07-31,2025-11-30,,Induction - Eco-Counter
+13,13,"Bloor St W, east of Old Mill Trl",Westbound,Bloor St W,Old Mill Trail,-79.4941657,43.6492323,30081325,00:15:00,2025-07-23,2024-07-31,2025-12-04,,Induction - Eco-Counter
+14,14,"Keele St, south of Sheppard Ave W (multi-use path)",Northbound,Keele St,Sheppard Ave W,-79.4861368,43.7444884,10133019,00:15:00,2023-10-18,2022-08-06,2026-04-14,,Induction - Eco-Counter
+15,15,"Keele St, south of Sheppard Ave W (multi-use path)",Southbound,Keele St,Sheppard Ave W,-79.4861368,43.7444884,10133019,00:15:00,2023-10-18,2022-08-06,2026-04-14,,Induction - Eco-Counter
+16,16,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Eastbound,Sheppard Ave W,Sentinel Rd,-79.4921287,43.743467,6002161,00:15:00,2023-10-18,2023-03-28,2025-11-26,,Induction - Eco-Counter
+17,17,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Westbound,Sheppard Ave W,Sentinel Rd,-79.4921287,43.743467,6002161,00:15:00,2023-10-18,2023-03-27,2025-05-13,,Induction - Eco-Counter
+18,18,"Sherbourne St, north of Gerrard St",Northbound,Sherbourne St,Gerrard St,-79.3725671,43.662038,1143580,00:15:00,2023-10-18,2022-11-14,2026-04-14,,Induction - Eco-Counter
+19,19,"Sherbourne St, north of Gerrard St",Southbound,Sherbourne St,Gerrard St,-79.3725671,43.662038,1143580,00:15:00,2023-10-18,2022-11-14,2026-04-14,,Induction - Eco-Counter
+20,20,"Sherbourne St, north of Gerrard St (retired)",Northbound,Sherbourne St,Gerrard St,-79.3725992,43.6622954,1143580,01:00:00,,2014-04-11,2019-06-02,2019-06-03,Induction - Eco-Counter
+21,21,"Sherbourne St, north of Gerrard St (retired)",Southbound,Sherbourne St,Gerrard St,-79.3725901,43.661932,1143580,01:00:00,,2015-10-20,2019-02-22,2019-05-17,Induction - Eco-Counter
+22,22,"Sherbourne St, north of Wellesley St E",Northbound,Sherbourne St,Wellesley St E,-79.375044,43.6679708,10923449,00:15:00,2025-07-23,2022-11-15,2026-04-14,,Induction - Eco-Counter
+23,23,"Sherbourne St, north of Wellesley St E",Southbound,Sherbourne St,Wellesley St E,-79.375044,43.6679708,10923449,00:15:00,2025-07-23,2022-11-15,2026-04-14,,Induction - Eco-Counter
+24,24,"Sherbourne St, north of Wellesley St E (retired)",Northbound,Sherbourne St,Wellesley St E,-79.3748765,43.6677188,10923449,00:15:00,,2014-04-30,2019-06-02,2019-06-03,Induction - Eco-Counter
+25,25,"Sherbourne St, north of Wellesley St E (retired)",Southbound,Sherbourne St,Wellesley St E,-79.3751043,43.6679505,10923449,01:00:00,,2014-04-11,2019-06-02,2019-06-03,Induction - Eco-Counter
+26,26,"Yonge St, north of Bloor St",Northbound,Yonge St,Bloor St,-79.3868925,43.6705587,11034877,00:15:00,2025-07-23,2022-10-27,2026-04-14,,Induction - Eco-Counter
+27,27,"Yonge St, north of Bloor St",Southbound,Yonge St,Bloor St,-79.3868925,43.6705587,11034877,00:15:00,2025-07-23,2022-10-27,2026-04-14,,Induction - Eco-Counter
+28,28,"Yonge St, north of Davenport Rd",Northbound,Yonge St,Davenport Rd,-79.3880628,43.6734429,8680067,00:15:00,2025-07-23,2024-01-15,2026-04-14,,Induction - Eco-Counter
+29,29,"Yonge St, north of Davenport Rd",Southbound,Yonge St,Davenport Rd,-79.3880628,43.6734429,8680067,00:15:00,2025-07-23,2022-11-14,2026-04-14,,Induction - Eco-Counter
+30,30,"Yonge St, north of Macpherson Ave",Northbound,Yonge St,Macpherson Ave,-79.3905663,43.6795414,1140465,00:15:00,2025-07-23,2022-11-14,2026-04-14,,Induction - Eco-Counter
+31,31,"Yonge St, north of Macpherson Ave",Southbound,Yonge St,Macpherson Ave,-79.3905663,43.6795414,1140465,00:15:00,2025-07-23,2024-06-23,2026-04-14,,Induction - Eco-Counter
+32,32,"Yonge St, north of St Clair Ave",Northbound,Yonge St,St Clair Ave,-79.3944265,43.6888532,7262532,00:15:00,2025-07-23,2022-11-14,2026-04-14,,Induction - Eco-Counter
+33,33,"Yonge St, north of St Clair Ave",Southbound,Yonge St,St Clair Ave,-79.3944265,43.6888532,7262532,00:15:00,2025-07-23,2022-11-14,2026-04-14,,Induction - Eco-Counter
+34,34,"Yonge St, south of Davisville Ave",Northbound,Yonge St,Davisville Ave,-79.3965356,43.697978,7273833,00:15:00,2025-07-23,2022-11-14,2026-04-14,,Induction - Eco-Counter
+35,35,"Yonge St, south of Davisville Ave",Southbound,Yonge St,Davisville Ave,-79.3965356,43.697978,7273833,00:15:00,2025-07-23,2022-11-23,2026-04-14,,Induction - Eco-Counter
+36,36,"Keele St, north of Four Winds Dr (multi-use path)",Northbound,Keele St,Four Winds Dr,-79.49192,43.766102,439433,00:15:00,2023-10-18,2022-06-07,2026-04-14,,Induction - Eco-Counter
+37,37,"Keele St, north of Four Winds Dr (multi-use path)",Southbound,Keele St,Four Winds Dr,-79.49192,43.766102,439433,00:15:00,2023-10-18,2022-06-07,2026-04-14,,Induction - Eco-Counter
+38,38,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Northbound,Murray Ross Pkwy,Shoreham Dr,-79.5145151,43.773275,30091481,00:15:00,2023-10-18,2022-05-31,2026-04-14,,Induction - Eco-Counter
+39,39,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Southbound,Murray Ross Pkwy,Shoreham Dr,-79.5145151,43.773275,30091481,00:15:00,2023-10-18,2022-05-31,2026-04-14,,Induction - Eco-Counter
+40,603,"Millwood Rd, north of Pape Ave/Donlands Ave",Northbound,Millwood Rd,Donlands Ave,-79.348918,43.697263,7466899,00:15:00,,2025-01-01,2025-07-09,,Induction - Eco-Counter
+41,604,"Millwood Rd, north of Pape Ave/Donlands Ave",Southbound,Millwood Rd,Pape Ave,-79.34953,43.696995,3232748,00:15:00,,2025-01-01,2025-07-09,,Induction - Eco-Counter
+42,746,"Bloor St E, west of Castle Frank Rd",Eastbound,Bloor St E,Castle Frank Rd,-79.3681194,43.6738047,8540609,00:15:00,2025-07-23,2025-03-18,2026-04-13,,Induction - Eco-Counter
+43,747,"Bloor St E, west of Castle Frank Rd",Westbound,Bloor St E,Castle Frank Rd,-79.3681194,43.6738047,8540609,00:15:00,2025-07-23,2025-03-18,2026-04-13,,Induction - Eco-Counter

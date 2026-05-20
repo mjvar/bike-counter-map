@@ -1,0 +1,19 @@
+centreline_id,location_name,linear_name_full,side_street,longitude,latitude,technology,avg_eastbound,avg_northbound,avg_southbound,avg_westbound,peak_eastbound,peak_northbound,peak_southbound,peak_westbound
+439433,"Keele St, north of Four Winds Dr (multi-use path)",Keele St,Four Winds Dr,-79.49192,43.766102,Induction - Eco-Counter,,33.56155015197568,37.52994692949204,,,123.0,124.0,
+1140465,"Yonge St, north of Macpherson Ave",Yonge St,Macpherson Ave,-79.3905663,43.6795414,Induction - Eco-Counter,,540.5062923523717,789.6607142857143,,,1351.0,1619.0,
+1142672,"Bloor St W, west of Huron St",Bloor St W,Huron St,-79.4022396,43.6670654,Induction - Eco-Counter,1541.4407665505225,,,1484.673076923077,4285.0,,,3881.0
+1143580,"Sherbourne St, north of Gerrard St",Sherbourne St,Gerrard St,-79.3725671,43.662038,Induction - Eco-Counter,,635.1104050833995,733.460683081811,,,1378.0,1580.0,
+3232748,"Millwood Rd, north of Pape Ave/Donlands Ave",Millwood Rd,Pape Ave,-79.34953,43.696995,Induction - Eco-Counter,,,123.61666666666666,,,,825.0,
+6002161,"Sheppard Ave W, west of Sentinel Rd (multi-use path)",Sheppard Ave W,Sentinel Rd,-79.4921287,43.743467,Induction - Eco-Counter,9.52092511013216,,,12.764550264550264,34.0,,,55.0
+7262532,"Yonge St, north of St Clair Ave",Yonge St,St Clair Ave,-79.3944265,43.6888532,Induction - Eco-Counter,,412.43650793650795,567.1771247021445,,,1079.0,1306.0,
+7273833,"Yonge St, south of Davisville Ave",Yonge St,Davisville Ave,-79.3965356,43.697978,Induction - Eco-Counter,,336.2,353.49915966386556,,,1380.0,873.0,
+7466899,"Millwood Rd, north of Pape Ave/Donlands Ave",Millwood Rd,Donlands Ave,-79.348918,43.697263,Induction - Eco-Counter,,29.733333333333334,,,,156.0,,
+8353520,"Bloor St W, east of Palmerston Blvd",Bloor St W,Palmerston Blvd,-79.413093,43.6647258,Induction - Eco-Counter,2027.2393247269117,,,1810.5729537366549,4149.0,,,3647.0
+8540609,"Bloor St E, west of Castle Frank Rd (retired)",Bloor St E,Castle Frank Rd,-79.3681194,43.6738047,Induction - Other,953.5594114824884,,,892.2491865045384,4012.0,,,4570.0
+8680067,"Yonge St, north of Davenport Rd",Yonge St,Davenport Rd,-79.3880628,43.6734429,Induction - Eco-Counter,,682.140456182473,756.1359300476947,,,1297.0,1818.0,
+10133019,"Keele St, south of Sheppard Ave W (multi-use path)",Keele St,Sheppard Ave W,-79.4861368,43.7444884,Induction - Eco-Counter,,19.402924451665314,16.05040650406504,,,83.0,74.0,
+10923449,"Sherbourne St, north of Wellesley St E",Sherbourne St,Wellesley St E,-79.375044,43.6679708,Induction - Eco-Counter,,669.5313741064336,829.6931637519873,,,1531.0,1791.0,
+11034877,"Yonge St, north of Bloor St",Yonge St,Bloor St,-79.3868925,43.6705587,Induction - Eco-Counter,,635.2762128325509,807.2037617554859,,,3285.0,1733.0,
+30042273,"Bloor St W, west of Oakmount Rd",Bloor St W,Oakmount Rd,-79.4625696,43.6541459,Induction - Eco-Counter,454.91487279843443,,,481.2759295499022,1150.0,,,1272.0
+30081325,"Bloor St W, east of Old Mill Trl",Bloor St W,Old Mill Trail,-79.494202,43.6491724,Induction - Eco-Counter,177.77520661157024,,,183.44170771756978,506.0,,,502.0
+30091481,"Murray Ross Pkwy, north of Shoreham Dr (multi-use path)",Murray Ross Pkwy,Shoreham Dr,-79.5145151,43.773275,Induction - Eco-Counter,,16.277432712215322,14.20954356846473,,,50.0,43.0,
