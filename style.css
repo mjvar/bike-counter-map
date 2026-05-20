@@ -178,7 +178,7 @@ header p  { font-size: 0.8rem; opacity: 0.6; margin-top: 2px; }
   font-weight: 500;
   text-transform: none;
   letter-spacing: 0;
-  color: #e74c3c;
+  /* color: #e74c3c; */
 }
 
 .dir-card {
@@ -283,6 +283,20 @@ header p  { font-size: 0.8rem; opacity: 0.6; margin-top: 2px; }
 .counter-marker.active {
   border-color: #333;
   border-width: 3px;
+}
+
+/* --- Coverage bar --- */
+.coverage-bar-track {
+  height: 10px;
+  border-radius: 6px;
+  border: 1.5px dotted #ccc;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.coverage-bar-fill {
+  height: 100%;
+  border-radius: 4px;
 }
 
 /* --- Info icon & tooltip --- */

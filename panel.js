@@ -185,33 +185,35 @@ function renderChart(container, allDates) {
 
 // --- Coverage strip (HTML, so the header can carry an info icon) ---
 
-function renderCoverage(container, allDates, plotW, marginLeft) {
-  const missing  = allDates.filter(d => d.volume === null).length;
-  const missRate = (missing / allDates.length * 100).toFixed(1);
+function renderCoverage(container, allDates) {
+  const missing      = allDates.filter(d => d.volume === null).length;
+  const coverageRate = 1 - missing / allDates.length;
+  const missRate     = (missing / allDates.length * 100).toFixed(1);
 
   const section = document.createElement("div");
   section.className = "panel-section";
 
-  const header = makeSectionHeader("Coverage", "Red areas of the rectangle indicate days with missing data. If a counter is missing many days, its averages may be less reliable.");
+  const header = makeSectionHeader("Completeness", "Shows the percentage of days for which data is available. Counters may sometimes be inactive or have technical issues, leading to missing data.");
   const badge = document.createElement("span");
   badge.className = "miss-badge";
-  badge.textContent = `${missRate}% missing`;
+  badge.style.color = coverageRate > 0.8 ? "#27ae60" : coverageRate > 0.5 ? "#f0a500" : "#e74c3c";
+  badge.textContent = `${Math.round(100-missRate)}% complete`;
   header.appendChild(badge);
   section.appendChild(header);
 
-  const canvas = document.createElement("canvas");
-  canvas.width  = allDates.length;
-  canvas.height = 1;
-  const ctx = canvas.getContext("2d");
-  allDates.forEach((d, i) => {
-    ctx.fillStyle = d.volume !== null ? "#9e9e9e" : "#e74c3c";
-    ctx.fillRect(i, 0, 1, 1);
-  });
+  const fillColor = d3.scaleLinear()
+    .domain([0, 0.5, 1])
+    .range(["#e74c3c", "#f0a500", "#27ae60"])
+    (coverageRate);
 
-  const img = document.createElement("img");
-  img.src = canvas.toDataURL();
-  img.style.cssText = `display:block;width:${plotW}px;height:${STRIP_H}px;margin-left:${marginLeft}px;image-rendering:pixelated;`;
-  section.appendChild(img);
+  const track = document.createElement("div");
+  track.className = "coverage-bar-track";
+  const fill = document.createElement("div");
+  fill.className = "coverage-bar-fill";
+  fill.style.width = `${coverageRate * 100}%`;
+  fill.style.background = fillColor;
+  track.appendChild(fill);
+  section.appendChild(track);
 
   container.appendChild(section);
 }
@@ -273,7 +275,7 @@ function renderPanel(container, row, daily) {
   const { W, m, plotW } = renderChart(chartSection, allDates);
 
   // Coverage strip
-  renderCoverage(container, allDates, plotW, m.left);
+  renderCoverage(container, allDates);
 
   // Total stats
   const avgVals = DIRECTIONS.map(d => row[`avg_${d}`]).filter(v => v != null);
