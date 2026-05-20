@@ -17,21 +17,19 @@ function openPanel(html) {
   panel.classList.add("open");
 }
 
+let activeEl = null;
+
 function closePanel() {
   panel.classList.remove("open");
+  if (activeEl) { activeEl.classList.remove("active"); activeEl = null; }
 }
 
 panelClose.addEventListener("click", closePanel);
 
 // --- Wards ---
-const WARDS = new Set(["03", "04", "05", "19", "20"]);
-
 fetch("data/City Wards Data - 4326.geojson")
   .then(r => r.json())
   .then(geojson => {
-    geojson.features = geojson.features.filter(
-      f => WARDS.has(f.properties.AREA_SHORT_CODE)
-    );
     const wardLabels = L.layerGroup();
     const wardsLayer = L.geoJSON(geojson, {
       style: { color: "#4a90d9", weight: 1, fillColor: "#4a90d9", fillOpacity: 0.2 },
@@ -94,7 +92,6 @@ Promise.all([
 
     const SIZE = 44;
     let activeMarker = null;
-    let activeEl     = null;
 
     const markers = rows.map(row => {
       const avg  = rowAvg(row);
