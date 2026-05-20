@@ -193,7 +193,7 @@ function renderCoverage(container, allDates) {
   const section = document.createElement("div");
   section.className = "panel-section";
 
-  const header = makeSectionHeader("Completeness", "Shows the percentage of days for which data is available. Counters may sometimes be inactive or have technical issues, leading to missing data.");
+  const header = makeSectionHeader("Completeness", "Shows the percentage of days for which data is available. Counters may sometimes be inactive or have technical issues, leading to gaps in the daily data.");
   const badge = document.createElement("span");
   badge.className = "miss-badge";
   badge.style.color = coverageRate > 0.8 ? "#27ae60" : coverageRate > 0.5 ? "#f0a500" : "#e74c3c";
