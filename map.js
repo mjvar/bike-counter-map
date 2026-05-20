@@ -7,6 +7,11 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
 
 const layerControl = L.control.layers(null, {}, { collapsed: false }).addTo(map);
 
+const layerTitle = document.createElement("div");
+layerTitle.className = "layer-control-title";
+layerTitle.textContent = "Map Layers";
+layerControl.getContainer().prepend(layerTitle);
+
 // --- Panel ---
 const panel        = document.getElementById("panel");
 const panelContent = document.getElementById("panel-content");

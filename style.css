@@ -340,6 +340,16 @@ header p  { font-size: 0.8rem; opacity: 0.6; margin-top: 2px; }
 
 .panel-info-tip.visible { opacity: 1; }
 
+/* --- Layer control title --- */
+.layer-control-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  padding: 6px 10px 4px;
+}
+
 /* --- Ward labels --- */
 .ward-label {
   background: none;
